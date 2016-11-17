@@ -1,0 +1,172 @@
+body{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    width: 150px;
+}
+
+
+
+.menu_search{
+    width: 100%;
+    height: 80px;
+    margin-right: 10px;
+    background-color: #F9F9F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pesquisa{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_input{
+    height: 50%;
+    width: 60%;
+    border-radius: 30px;
+    padding: 0.3%;
+    border: solid 1px grey;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.menu_search .fa.fa-search{
+    font-size: 1.8em;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.menu_categoria{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    font-size: 2.8em;
+    justify-content: center;
+    align-items: center;
+    border-top: solid 1px grey;
+    border-bottom: solid 1px grey;
+    opacity: 0.5;
+    cursor: pointer;
+    overflow-y: hidden;
+}
+
+.menu_categoria .fa.fa-bars{
+    color: black;
+}
+
+.conteudo_categoria{
+
+    height: 0;
+    display: none;
+}
+
+.box{
+
+    height: 230px;
+    display: flex;
+    flex-direction: row;
+    opacity: 0.2;
+}
+
+
+.itens{
+    display: flex;
+    flex-direction: row;
+    border: solid 1px black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.itens p{
+    font-size: 1.5em;
+}
+
+ .fa.fa-paw, a{
+    font-size: 4.8em;
+}
+
+.fa.fa-paw{
+    margin-top: 4px;
+    margin-bottom: 33px;
+}
+
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.prod{
+    padding: 15px 0px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+.prod img{
+    display: inline-block;
+}
+
+@media (max-width: 400px){
+    .box{
+        flex-direction: column;
+        height: 400px;
+
+    }
+
+    .menu_search{
+        flex-direction: column;
+        height: 125px;
+    }
+
+    header{
+        height: 500px;
+    }
+
+    .search_input {
+        height: 39px;
+    }
+
+    .logo{
+        width: 164px;
+    }
+
+    .conteudo_categoria {
+        display: flex; 
+    }
+
+}
+
+@media (max-width: 440px){
+    .logo {
+        width: 118px;
+    }
+    .search_input {
+        width: 69%;
+    }
+    .conteudo_categoria {
+        margin-top: 0px;
+        display: flex; 
+    }
+}
